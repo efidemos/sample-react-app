@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: bmi-calculator
+  title: bmi-calculator
+  description: Testing what happens if I register the same software without merging the PR
+  annotations:
+    github.com/project-slug: efidemos/sample-react-app
+    backstage.io/techdocs-ref: docs:.. 
+    
+    
+spec:
+  type: service
+  owner: group:default/team-charlie
+  lifecycle: experimental
