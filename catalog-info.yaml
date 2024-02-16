@@ -3,13 +3,24 @@ kind: Component
 metadata:
   name: bmi-calculator
   title: bmi-calculator
-  description: React app for testing the registration of a new component via template
+  description: Testing out this scaffolder template
   annotations:
     github.com/project-slug: efidemos/sample-react-app
     backstage.io/techdocs-ref: dir:. 
     
     
+  tags:
+    
+  
+  
 spec:
   type: service
   owner: group:default/team-bravo
+  
   lifecycle: experimental
+  
+  dependsOn: component:default/demo
+  providesApis: api:default/hello-world
+  consumesApis: api:default/google
+  
+  
