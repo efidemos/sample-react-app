@@ -6,10 +6,21 @@ metadata:
   description: React app for testing the registration of a new component via template
   annotations:
     github.com/project-slug: efidemos/sample-react-app
-    backstage.io/techdocs-ref: dir:. 
+    backstage.io/techdocs-ref: dir:.
     
     
+  
+  
+  
 spec:
   type: service
-  owner: group:default/team-bravo
+  owner: group:default/team-charlie
+  
   lifecycle: experimental
+  system: 
+  subcomponentOf: component:default/demo
+  
+  
+  
+  
+  
