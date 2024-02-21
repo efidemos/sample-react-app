@@ -1,0 +1,37 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: bmi-calculator
+  title: optional title
+  description: React app for testing the registration of a new component via template
+  annotations:
+    github.com/project-slug: efidemos/sample-react-app
+    backstage.io/techdocs-ref: dir:.
+    
+    
+    
+  tags:
+    - demo
+    - react
+  
+  
+  links:
+    - url: http://test.com
+      title: Test
+      icon: github
+      
+    - url: http://example.com
+      title: Example
+      
+  
+spec:
+  type: service
+  owner: group:default/team-alpha
+  
+  lifecycle: production
+  
+  subcomponentOf: component:default/demo
+  dependsOn:
+  providesApis:
+  consumesApis:
+  
