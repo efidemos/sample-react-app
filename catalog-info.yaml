@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: bmi-calculator
-  description: BMI calculator app
+  description: React app for testing the registration of a new component via template
   annotations:
     github.com/project-slug: efidemos/sample-react-app
     backstage.io/techdocs-ref: dir:.
@@ -10,23 +10,18 @@ metadata:
     sonarqube.org/project-key: sqtest7
   tags:
     - react
-    - test
+    - demo
   links:
     - url: http://example.com
       title: Example
       icon: github
       
-    - url: test
-      title: test
-      
 spec:
   type: service
-  lifecycle: experimental
+  lifecycle: production
   owner: group:default/team-charlie
   productOwner: user:default/efi-quynh
   system: system:default/customers-system
-  dependsOn:
-    - component:default/graf-testi
   providesApis:
-    - api:default/google
+    - api:default/hello-world
     - api:default/highways
