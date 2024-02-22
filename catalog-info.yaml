@@ -6,6 +6,8 @@ metadata:
   annotations:
     github.com/project-slug: efidemos/sample-react-app
     backstage.io/techdocs-ref: dir:.
+    jenkins.io/job-full-name: testi
+    sonarqube.org/project-key sqtest7
   tags:
     - react
     - demo
@@ -16,7 +18,7 @@ metadata:
       
 spec:
   type: service
-  lifecycle: experimental
+  lifecycle: production
   owner: group:default/team-charlie
   providesApis:
     - api:default/hetzner
