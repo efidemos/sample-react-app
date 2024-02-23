@@ -6,7 +6,7 @@ metadata:
   annotations:
     github.com/project-slug: efidemos/sample-react-app
     backstage.io/techdocs-ref: dir:.
-    jenkins.io/job-full-name: testi
+    jenkins.io/job-full-name: jenkemtest2
     sonarqube.org/project-key: sqtest7
   tags:
     - react
