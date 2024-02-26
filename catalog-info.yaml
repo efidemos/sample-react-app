@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: system-name-test
+  title: System Name Test
+  description: System for testing scaffolder
+  annotations:
+    github.com/project-slug: efidemos/sample-react-app
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - demo
+    - test
+  labels: label
+
+spec:
+  lifecycle: production
+  owner: group:default/team-charlie
