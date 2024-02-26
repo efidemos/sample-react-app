@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: system-name-test
+  description: System for testing scaffolder
+  annotations:
+    github.com/project-slug: efidemos/sample-react-app
+    backstage.io/techdocs-ref: dir:.
+    jenkins.io/job-full-name: dsafsd
+    sentry.io/project-slug: ewrw
+    sonarqube.org/project-key: sdfa
+  tags:
+    - test
+  labels:
+    - what: now
+    - who: dis
+  links:
+    - url: http://example.com
+      title: Example
+      icon: github
+      
+  cmdbId: 123123
+
+spec:
+  lifecycle: production
+  owner: group:default/team-delta
