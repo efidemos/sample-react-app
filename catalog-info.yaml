@@ -1,0 +1,25 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: system-name-test
+  description: System for testing scaffolder
+  annotations:
+    github.com/project-slug: efidemos/sample-react-app
+    backstage.io/techdocs-ref: dir:.
+    jenkins.io/job-full-name: jobby-mcjobberson
+    sentry.io/project-slug: sentryid
+    sonarqube.org/project-key: key
+  labels:
+    - key: %{{ v }}
+    - value: %{{ v }}
+    - key: %{{ v }}
+    - value: %{{ v }}
+  links:
+    - url: http://example.com
+    - title: Example
+    - icon: github
+  cmdbId: 123423
+
+spec:
+  lifecycle: production
+  owner: group:default/team-charlie
