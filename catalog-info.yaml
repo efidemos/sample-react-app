@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: bmi-calculator
+  description: React app for testing the registration of a new component via template
+  annotations:
+    github.com/project-slug: efidemos/sample-react-app
+    backstage.io/techdocs-ref: dir:.
+    sentry.io/project-slug: fasdfa
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/team-bravo
+  productOwner: user:default/efi-quynh
+  system: system:default/customers-system
+  subcomponentOf: component:default/all-engineers
+  dependsOn:
+    - component:default/importtest
+  consumesApis:
+    - api:default/github
+    - api:default/getty
