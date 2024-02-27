@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: system-name-test
+  description: System for testing scaffolder
+  annotations:
+    github.com/project-slug: efidemos/sample-react-app
+    backstage.io/techdocs-ref: dir:.
+  links:
+    - url: http://example.com
+      
+    - url: http://test.com
+      title: test
+      icon: test
+        cmdbId: 43743
+spec:
+  owner: group:default/team-charlie
