@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: system-name-test
+  description: System for testing scaffolder
+  annotations:
+    github.com/project-slug: efidemos/sample-react-app
+    backstage.io/techdocs-ref: dir:.
+    jenkins.io/job-full-name: sjgadsafa
+  tags:
+    - test
+    - demo
+  labels:
+    developer.astrazeneca.com/tag: now
+  links:- url: http://example.com
+      title: Example
+      icon: scaffolder
+      
+spec:
+  owner: group:default/roadie
