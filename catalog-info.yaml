@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: resource-test
+  description: Fake resource for testing scaffolder
+  annotations:
+    github.com/project-slug: efidemos/sample-react-app
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: database
+  lifecycle: production
+  owner: group:default/team-charlie
+  providesApis:
+    - api:default/hetzner
