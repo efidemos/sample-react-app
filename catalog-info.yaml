@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: system-name-test
+  title: System Name Test
+  description: System for testing scaffolder
+  annotations:
+    github.com/project-slug: efidemos/sample-react-app
+    backstage.io/techdocs-ref: dir:.
+    sonarqube.org/project-key: 474747
+  tags:
+    - test
+    - demo
+  labels:
+    developer.astrazeneca.com/tag: test
+    developer.astrazeneca.com/name: example
+  cmdbId: 43743764376
+spec:
+  owner: group:default/team-a
