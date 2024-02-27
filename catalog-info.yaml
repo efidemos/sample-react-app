@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: system-name-test
+  description: Testing out this scaffolder template
+  annotations:
+    github.com/project-slug: efidemos/sample-react-app
+    backstage.io/techdocs-ref: dir:.
+  links:
+    - url: http://example.com
+    - url: http://test.comtitle: Test
+spec:
+  type: service
+  lifecycle: production
+  owner: group:default/team-bravo
