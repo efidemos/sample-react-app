@@ -1,14 +1,12 @@
 apiVersion: backstage.io/v1alpha1
-kind: Resource
+kind: Component
 metadata:
-  name: resource-test
-  description: Fake resource for testing scaffolder
+  name: deepl-node
+  description: Testing out this scaffolder template
   annotations:
     github.com/project-slug: efidemos/sample-react-app
-    backstage.io/techdocs-ref: dir:.
+    backstage.io/techdocs-ref: dir:./test-custom
 spec:
-  type: database
+  type: service
   lifecycle: production
-  owner: group:default/team-charlie
-  providesApis:
-    - api:default/hetzner
+  owner: user:default/amelia.park
