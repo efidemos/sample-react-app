@@ -1,14 +1,12 @@
 apiVersion: backstage.io/v1alpha1
-kind: Resource
+kind: Component
 metadata:
-  name: resource-test
-  description: Fake resource for testing scaffolder
+  name: bmi-calculator
+  description: React app for testing the registration of a new component via template
   annotations:
     github.com/project-slug: efidemos/sample-react-app
-    backstage.io/techdocs-ref: dir:.
+    backstage.io/techdocs-ref: dir:./custom-test
 spec:
-  type: database
+  type: service
   lifecycle: production
   owner: group:default/team-charlie
-  providesApis:
-    - api:default/hetzner
