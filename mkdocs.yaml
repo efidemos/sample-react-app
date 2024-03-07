@@ -1,0 +1,9 @@
+site_name: "bmi-calculator"
+site_description: "React app for testing the registration of a new component via template"
+edit_uri: edit/main/docs
+
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core
