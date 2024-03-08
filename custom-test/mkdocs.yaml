@@ -1,5 +1,6 @@
 site_name: Root docs
 repo_url: https://github.com/efidemos/sample-react-app
+edit_uri: edit/main/custom-test/docs
 
 nav:
   - Home: index.md
